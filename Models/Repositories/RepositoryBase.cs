@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Models.Repositories
 {
-    public class RepositoryBase<TEntity> : IRepositoryBase<TEntity> where TEntity : class
+    public abstract class RepositoryBase<TEntity> : IRepositoryBase<TEntity> where TEntity : class
     {
         private DataContext _dataContext;
 
