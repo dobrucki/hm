@@ -7,7 +7,12 @@ namespace Models.Repositories
 {
     public class RepositoryBase<TEntity> : IRepositoryBase<TEntity> where TEntity : class
     {
-        public RepositoryBase()
+        private DataContext _dataContext;
+
+        public RepositoryBase(DataContext dataContext)
+        {
+            _dataContext = dataContext;
+        }
         
         public IQueryable<TEntity> FindAll()
         {
