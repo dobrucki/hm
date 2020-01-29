@@ -8,7 +8,7 @@ namespace Models
         public DataContext(DbContextOptions<DataContext> options) : base(options)
         {
         }
-        
+
         public DbSet<Room> Rooms { get; set; }
     }
 }

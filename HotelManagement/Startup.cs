@@ -10,6 +10,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.EntityFrameworkCore;
+using Models;
+using Models.Repositories;
+using Models.UnitOfWork;
 
 namespace HotelManagement
 {
@@ -25,6 +29,13 @@ namespace HotelManagement
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContextPool<DataContext>(options =>
+                {
+                    options.UseNpgsql(Configuration["ConnectionStrings:HotelDbConnection"]);
+                    options.UseSnakeCaseNamingConvention();
+                });
+            services.AddTransient<IRoomRepository, RoomRepository>();
+            services.AddTransient<IUnitOfWork, UnitOfWork>();
             services.AddControllers();
         }
 

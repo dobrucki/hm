@@ -7,7 +7,7 @@ namespace Models.Repositories
 {
     public abstract class RepositoryBase<TEntity> : IRepositoryBase<TEntity> where TEntity : class
     {
-        private DataContext _dataContext;
+        private readonly DataContext _dataContext;
 
         public RepositoryBase(DataContext dataContext)
         {

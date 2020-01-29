@@ -8,7 +8,7 @@ using Models.Entities;
 namespace Models.Repositories
 {
     public class RoomRepository : RepositoryBase<Room>, IRoomRepository
-    {
+    { 
         public RoomRepository(DataContext dataContext) : base(dataContext)
         {
         }
@@ -18,7 +18,7 @@ namespace Models.Repositories
             return await FindAll().OrderBy(room => room.Number).ToListAsync();
         }
 
-        public async Task<Room> GetRoomById(Guid id)
+        public async Task<Room> GetRoomByIdAsync(Guid id)
         {
             return await FindByCondition(room => room.Id == id)
                 .FirstOrDefaultAsync();
