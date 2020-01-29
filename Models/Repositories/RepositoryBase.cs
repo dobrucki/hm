@@ -16,27 +16,27 @@ namespace Models.Repositories
         
         public IQueryable<TEntity> FindAll()
         {
-            throw new NotImplementedException();
+            return _dataContext.Set<TEntity>().AsNoTracking();
         }
 
         public IQueryable<TEntity> FindByCondition(Expression<Func<TEntity, bool>> expression)
         {
-            throw new NotImplementedException();
+            return _dataContext.Set<TEntity>().Where(expression).AsNoTracking();
         }
 
         public void Create(TEntity entity)
         {
-            throw new NotImplementedException();
+            _dataContext.Set<TEntity>().Add(entity);
         }
 
         public void Update(TEntity entity)
         {
-            throw new NotImplementedException();
+            _dataContext.Set<TEntity>().Update(entity);
         }
 
         public void Delete(TEntity entity)
         {
-            throw new NotImplementedException();
+            _dataContext.Set<TEntity>().Remove(entity);
         }
     }
 }
