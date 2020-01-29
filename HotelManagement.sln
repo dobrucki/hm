@@ -2,9 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelManagement", "HotelManagement\HotelManagement.csproj", "{AFFF1408-257C-4DC6-803D-35C5934ACB3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{F3CFAC1C-54C9-43CD-BDB9-2F43DC182597}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositories", "Repositories\Repositories.csproj", "{64A318E9-5C08-4953-B3C6-E07BE1633A27}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{D322A8CA-329B-4790-BDD8-BCE493BB4FD3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -16,13 +14,9 @@ Global
 		{AFFF1408-257C-4DC6-803D-35C5934ACB3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFFF1408-257C-4DC6-803D-35C5934ACB3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFFF1408-257C-4DC6-803D-35C5934ACB3E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F3CFAC1C-54C9-43CD-BDB9-2F43DC182597}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F3CFAC1C-54C9-43CD-BDB9-2F43DC182597}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F3CFAC1C-54C9-43CD-BDB9-2F43DC182597}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F3CFAC1C-54C9-43CD-BDB9-2F43DC182597}.Release|Any CPU.Build.0 = Release|Any CPU
-		{64A318E9-5C08-4953-B3C6-E07BE1633A27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{64A318E9-5C08-4953-B3C6-E07BE1633A27}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{64A318E9-5C08-4953-B3C6-E07BE1633A27}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{64A318E9-5C08-4953-B3C6-E07BE1633A27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D322A8CA-329B-4790-BDD8-BCE493BB4FD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D322A8CA-329B-4790-BDD8-BCE493BB4FD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D322A8CA-329B-4790-BDD8-BCE493BB4FD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D322A8CA-329B-4790-BDD8-BCE493BB4FD3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
